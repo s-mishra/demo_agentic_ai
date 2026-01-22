@@ -4,6 +4,7 @@ Project conventions for dengue surveillance analysis.
 
 ## Environment
 
+- Python 3.10+
 - Use `uv run` for all Python execution (creates fresh environment from `pyproject.toml`)
 - Run commands from project root
 
@@ -21,4 +22,4 @@ Project conventions for dengue surveillance analysis.
 
 ## Git
 
-- Never commit data files (`data/` is for local use only)
+- Never commit data files (`data/` and `output/` are for local use only)
