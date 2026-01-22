@@ -1,0 +1,15 @@
+[project]
+name = "demo-agentic-ai"
+version = "0.1.0"
+description = "Dengue surveillance data analysis"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas",
+    "matplotlib",
+    "bambi",
+    "seaborn",
+    "scipy",
+]
+
+[dependency-groups]
+dev = []
