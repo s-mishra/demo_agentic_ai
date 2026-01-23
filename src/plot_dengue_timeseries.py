@@ -1,3 +1,9 @@
+"""
+Plot dengue case time series from surveillance data.
+
+Creates a line plot with filled area showing weekly dengue cases over time.
+"""
+
 import pandas as pd
 import matplotlib.pyplot as plt
 from pathlib import Path
