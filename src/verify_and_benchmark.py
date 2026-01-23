@@ -26,6 +26,12 @@ def benchmark(func, args, n_runs=5):
 
 
 def verify_and_benchmark_all():
+    """
+    Verify equivalence and benchmark all slow vs fast implementations.
+
+    Tests each function pair for numerical equivalence, then measures
+    execution time to compute speedup factors.
+    """
     np.random.seed(42)
 
     results = []

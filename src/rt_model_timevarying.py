@@ -24,6 +24,21 @@ si_weights = si_weights / si_weights.sum()
 
 # Compute total infectiousness (vectorized with scipy)
 def compute_infectiousness(cases, weights):
+    """
+    Compute total infectiousness using the renewal equation.
+
+    Parameters
+    ----------
+    cases : array-like
+        Time series of observed case counts.
+    weights : array-like
+        Serial interval distribution weights.
+
+    Returns
+    -------
+    np.ndarray
+        Infectiousness at each time point, computed as weighted sum of past cases.
+    """
     n = len(cases)
     infectiousness = np.zeros(n)
     for t in range(1, n):
